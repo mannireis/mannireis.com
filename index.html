@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manni's website</title>
+
+    <script type="module">
+        function makeRGB() {
+            const currentHue = document.documentElement.style.getPropertyValue('--hue')
+            document.documentElement.style.setProperty('--hue', (currentHue % 360) + 1)
+        
+            setTimeout(makeRGB, 10)
+        }
+
+        makeRGB()
+    </script>
+</head>
+<body>
+    <main>
+        <h1>Tiile</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure animi adipisci aspernatur itaque unde corporis sapiente vel dignissimos explicabo expedita!</p>
+        <h3>Lorem ipsum dolor sit.</h3>
+        <img src="Photo1.jpg" alt="Hello World">
+
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Impedit itaque possimus temporibus laboriosam, doloribus hic 
+        consectetur quam, exercitationem officiis unde distinctio ipsam 
+        iusto recusandae voluptate nobis voluptatibus deleniti veniam nihil quis!
+        Delectus nulla vero sequi veniam facilis? Iure cum doloremque pariatur nihil consequuntur? Doloribus, ratione...</p>
+
+        <a href="about.html" class="button">Learn more</a>
+    </main>
+    
+    <footer>
+        <p>Footer</p>
+    </footer>
+</body>
+</html>

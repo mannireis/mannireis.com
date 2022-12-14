@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
+
+.home {
+    font-size: 50px;
+    color: #000;
+    text-decoration: none;
+    border-radius: 20px;
+    border: 5px solid grey;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+a {
+
+
+ color: #000;
+ font-size: 20px;
+ font-family: 'monospace';
+ 
+}
