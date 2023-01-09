@@ -59,6 +59,11 @@ a {
     padding: 5px;
 }
 
+dialog {
+  margin: 100px;
+background-color: black;
+}
+
 .home {
     font-size: 50px;
     color: #000;
@@ -66,5 +71,12 @@ a {
     border-radius: 20px;
     border: 5px solid grey;
     font-family: 'Courier New', Courier, monospace;
+    padding: 5px;
+}
+
+header { 
+
+
+    background-color: green;
 }
 
