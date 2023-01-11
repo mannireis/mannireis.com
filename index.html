@@ -1,49 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Manni's website</title>
 
-    <script type="module">
-        function makeRGB() {
-            const currentHue = document.documentElement.style.getPropertyValue('--hue')
-            document.documentElement.style.setProperty('--hue', (currentHue % 360) + 1)
-        
-            setTimeout(makeRGB, 10)
-        }
-
-        makeRGB()
-    </script>
-</head>
-<body>
-    <header>  <a class="home" href="index.html">Home</a></header>
+    <script src="/js.js" type="module"></script>
+  </head>
+  <body>
+    <header><a class="home" href="index.html">Home</a></header>
     <main>
-        <dialog open>
-            <form method="dialog">
-                <button type="submit">Close</button>
-            </form>
-        </dialog>
+      <h1>Mannis website</h1>
+      <p>Hello world my name is manni</p>
+      <h3>this is me ↓</h3>
+      <img src="Photo1.jpg" alt="Hello World" />
 
-        
-      
-        <h1>Mannis website</h1>
-        <p>Hello world my name is manni</p>
-        <h3>this is me ↓</h3>
-        <img src="Photo1.jpg" alt="Hello World">
-
-
-        <p></p>
-        <a href="about.html" class="button">Learn more!!</a>
-        <a href="portfolio.html" class="button">My portfolio</a>
+      <p></p>
+      <a href="about.html" class="button">Learn more!!</a>
+      <a href="portfolio.html" class="button">My portfolio</a>
     </main>
-    
+
     <footer>
-         <p>Learn more about me 🙂!!!!</p>
-        <a href="about.html" class="button">Learn more!!</a>
+      <p>Learn more about me 🙂!!!!</p>
+      <a href="about.html" class="button">Learn more!!</a>
     </footer>
-</body>
+  </body>
 </html>
