@@ -70,3 +70,14 @@ a {
 header {
   background-color: hsl(var(--hue), 100%, 50%);
 }
+
+details > summary > img {
+  width: auto;
+  height: 70vh;
+}
+
+details[open] {
+  position: fixed;
+  inset: 10rem;
+  background-color: blue;
+}
