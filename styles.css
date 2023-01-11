@@ -14,7 +14,7 @@ body {
     font-size: 18px;
 }
 
-main, footer {
+main, footer, header{
     padding: 2rem;
 }
 
@@ -75,8 +75,7 @@ background-color: black;
 }
 
 header { 
-
-
+   
     background-color: green;
 }
 
