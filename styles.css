@@ -46,9 +46,8 @@ p {
     max-width: 80ch;
 }
 
-*+* {
-    margin-top: 1em;
-}
+
+
 
 footer {
     background-color: hsl(var(--hue), 100%, 50%);
@@ -64,18 +63,19 @@ dialog {
 background-color: black;
 }
 
-.home {
+ .home {
     font-size: 50px;
     color: #000;
     text-decoration: none;
     border-radius: 20px;
-    border: 5px solid grey;
+    
     font-family: 'Courier New', Courier, monospace;
     padding: 5px;
 }
 
 header { 
+    background-color: hsl(var(--hue), 100%, 50%);
    
-    background-color: green;
+ 
 }
 
