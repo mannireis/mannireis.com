@@ -10,21 +10,34 @@
 
     <script src="/js.js" type="module"></script>
   </head>
-  <body>
-    <header><a class="home" href="index.html">Home</a></header>
-    <hr />
-    <main>
-      <h1>Mannis website</h1>
-      <p>Hello world my name is manni</p>
-      <h3>this is me ↓</h3>
-      <img src="Photo1.jpg" alt="Hello World" />
 
-      <p></p>
-      <a href="about.html" class="button">Learn more!!</a>
-      <a href="Before.html" class="button">My Game</a>
-      <a href="portfolio.html" class="button">My portfolio</a>
-    </main>
+  <body class="home">
+    <header class="main-header">
+      <h1>
+        <a class="logo" href="index.html" title="Home"
+          ><img src="logo.svg" alt="Logo"
+        /></a>
+      </h1>
+      <nav class="main-nav">
+        <a href="portfolio.html">Portfolio</a>
+        <a href="Before.html">Game</a>
+      </nav>
+    </header>
+
     <hr />
+
+    <main>
+      <section class="intro">
+        <header>
+          <h1>Hello world my name is Manni</h1>
+          <p>Description</p>
+        </header>
+        <img src="Photo1.jpg" alt="Hello World" />
+      </section>
+    </main>
+
+    <hr />
+
     <footer>
       <p>Learn more about me 🙂!!!!</p>
       <a href="about.html" class="button">Learn more!!</a>
