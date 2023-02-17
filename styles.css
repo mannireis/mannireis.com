@@ -50,7 +50,7 @@ p {
 }
 
 footer {
-  background-color: hsl(var(--hue), 100%, 50%);
+  background-color: hsl(var(--hue), 100%, 95%);
   height: 300px;
 }
 a {
@@ -68,7 +68,7 @@ a {
 }
 
 header {
-  background-color: hsl(var(--hue), 100%, 50%);
+  background-color: hsl(var(--hue), 100%, 95%);
 }
 
 details > summary > img {
