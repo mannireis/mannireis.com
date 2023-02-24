@@ -19,6 +19,9 @@ footer,
 header {
   padding: 2rem;
 }
+main {
+  height: min(450px);
+}
 
 img,
 h2 > img {
