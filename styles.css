@@ -1,3 +1,10 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(10px, auto);
+}
+
 .title {
   padding-top: 40px;
   text-align: center;
@@ -10,12 +17,12 @@
   padding-bottom: 100px;
 }
 
-div {
+button {
   border-style: ridge;
   border-radius: 30px;
   border-color: rgb(230, 226, 226);
-  padding: 50px;
-  width: 400px;
+  max-width: 400px;
+  height: 150px;
 }
 
 a {
