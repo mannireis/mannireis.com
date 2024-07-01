@@ -33,12 +33,17 @@ header {
         list-style-type: none;
 
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         flex-wrap: wrap;
 
-        >span {
-            border-left: var(--border);
-        }
+
+    }
+}
+
+.now {
+    color: rgb(33, 255, 0);
+    &:visited {
+        color: rgb(33, 255, 0);
     }
 }
 
@@ -61,13 +66,15 @@ hr {
 }
 
 a {
-    color: rgb(33, 255, 0);
+    color: white;
 
     &:visited {
-        color: rgb(20, 155, 0);
+        color: rgb(214, 214, 214);
     }
 }
 
+
+
 strong {
-    color: rgb(33, 255, 0);
+    color: white;
 }
