@@ -29,7 +29,7 @@ body {
 footer {
     padding-top: var(--spacing);
 
-    > nav > ul {
+ul {
         list-style-type: none;
 
         display: flex;
