@@ -6,13 +6,6 @@
     --border: 2px solid white;
 }
 
-* {
-    box-sizing: border-box;
-
-    margin: 0;
-    padding: 0;
-}
-
 body {
     margin-inline: auto;
 
@@ -22,65 +15,72 @@ body {
     font-size: clamp(16px, 2vw, 18px);
     line-height: 1.5;
 
-    color: white;
-    background-color: black;
+    color: #E2F3EA;
+    background-color: #2B2B27;
 }
 
-footer {
-    padding-top: var(--spacing);
+a {
+    color: #00A6FB;
 
-ul {
+}
+
+
+footer {
+    ul {
+        box-sizing: border-box;
         list-style-type: none;
 
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
+        padding: 0;
+        margin: 0;
     }
 }
 
 header {
-    padding-top: var(--spacing);
 
     > nav > ul {
+        box-sizing: border-box;
         list-style-type: none;
-
+        padding: 0;
+        margin: 0;
         display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
+        justify-content: start;
+    }
+    > nav > ul > hr {
+        margin: 0;
+        margin-top:10px ;
+        height: 25px;
+
+    }
+    > nav > ul > li {
+        margin: 10px;
+
     }
 }
 
-.now {
-    color: rgb(33, 255, 0);
-    &:visited {
-        color: rgb(33, 255, 0);
-    }
-}
+
 
 main {
     > :not(:first-child) {
         margin-top: var(--spacing-relative);
     }
 
-    ul > li:not(:first-child) {
+    ul  {
         margin-top: var(--spacing-relative-small);
     }
 }
 
-hr {
-    margin-block: var(--spacing);
-
-    border: none;
-    border-top: var(--border);
+.hr {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
-a {
-    color: white;
 
-    &:visited {
-        color: rgb(214, 214, 214);
-    }
-}
 
 strong {
     color: white;
