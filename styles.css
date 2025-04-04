@@ -1,87 +1,111 @@
-:root {
-    --spacing: 32px;
-    --spacing-relative: 1lh;
-    --spacing-relative-small: 0.25lh;
+.header {
+    position: sticky;
+    top: 0;
+    padding: 10px 16px;
+    background: #555;
+    color: #f1f1f1;
+  }
 
-    --border: 2px solid white;
-}
 
 body {
-    margin-inline: auto;
-
-    padding-inline: max(calc((100% - 66ch) / 2), 1rem);
-
-    font-family: monospace;
-    font-size: clamp(16px, 2vw, 18px);
-    line-height: 1.5;
-
-    color: #E2F3EA;
-    background-color: #2B2B27;
-}
-
-a {
-    color: #00A6FB;
-
-}
-
-
-footer {
-    ul {
-        box-sizing: border-box;
-        list-style-type: none;
-
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        padding: 0;
-        margin: 0;
-    }
-}
-
-header {
-
-    > nav > ul {
-        box-sizing: border-box;
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        justify-content: start;
-    }
-    > nav > ul > hr {
-        margin: 0;
-        margin-top:10px ;
-        height: 25px;
-
-    }
-    > nav > ul > li {
-        margin: 10px;
-
-    }
-}
-
-
-
-main {
-    > :not(:first-child) {
-        margin-top: var(--spacing-relative);
-    }
-
-    ul  {
-        margin-top: var(--spacing-relative-small);
-    }
-}
-
-.hr {
-    padding: 0;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     margin: 0;
     box-sizing: border-box;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    overflow: hidden;
+    font-family: 'Courier New', Courier, monospace;
+
+    color: #999;
+    text-align: center;
+    /* img size is 50x50 */
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC") repeat 0 0;
+    -webkit-animation: bg-scrolling-reverse 0.92s infinite;
+    /* Safari 4+ */
+    -moz-animation: bg-scrolling-reverse 0.92s infinite;
+    /* Fx 5+ */
+    -o-animation: bg-scrolling-reverse 0.92s infinite;
+    /* Opera 12+ */
+    animation: bg-scrolling-reverse 0.92s infinite;
+    /* IE 10+ */
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    -o-animation-timing-function: linear;
+    animation-timing-function: linear;
+}
+
+.top {
+    background: rgba(255, 255, 255, 0.169);
+    backdrop-filter: blur(15px) saturate(172%);
+    -webkit-backdrop-filter: blur(15px) saturate(172%);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    min-height: calc(100vh - 80px); /* Subtract padding space from total height */
+    width: 80%;
+    max-width: 1000px;
+    padding: 30px;
+    text-align: center;
+    margin-top: 20px; /* Adds space above the .top container */
+    margin-bottom: 20px; /* Adds space below the .top container */
+}
+
+h1, h3 {
+    margin: 10px 0; /* Add some margin between h1 and h3 */
+}
+
+br {
+    line-height: 2; /* Increase space between lines */
 }
 
 
 
-strong {
-    color: white;
+@-webkit-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-moz-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-o-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-webkit-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@-moz-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@-o-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+
+
+ul {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
