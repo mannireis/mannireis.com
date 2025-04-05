@@ -17,7 +17,6 @@ body {
     box-sizing: border-box;
     overflow: hidden;
     font-family: 'Courier New', Courier, monospace;
-
     color: #999;
     text-align: center;
     /* img size is 50x50 */
@@ -58,7 +57,6 @@ h1, h3 {
 br {
     line-height: 2; /* Increase space between lines */
 }
-
 
 
 @-webkit-keyframes bg-scrolling-reverse {
@@ -102,10 +100,9 @@ br {
   }
 }
 
-
 ul {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  max-width: max-content;
+  text-align: left;
+  display: table;
+  margin: 0 auto;
 }
