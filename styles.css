@@ -1,99 +1,42 @@
-
 body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
-    box-sizing: border-box;
-    overflow: hidden;
-    font-family: 'Courier New', Courier, monospace;
-    color: #999;
-    text-align: center;
-    /* img size is 50x50 */
-    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC") repeat 0 0;
-    -webkit-animation: bg-scrolling-reverse 0.92s infinite;
-    /* Safari 4+ */
-    -moz-animation: bg-scrolling-reverse 0.92s infinite;
-    /* Fx 5+ */
-    -o-animation: bg-scrolling-reverse 0.92s infinite;
-    /* Opera 12+ */
-    animation: bg-scrolling-reverse 0.92s infinite;
-    /* IE 10+ */
-    -webkit-animation-timing-function: linear;
-    -moz-animation-timing-function: linear;
-    -o-animation-timing-function: linear;
-    animation-timing-function: linear;
+    background-image: url(images/background.png);
+    background-size: cover;
 }
 
-.top {
-    background: rgba(255, 255, 255, 0.169);
-    backdrop-filter: blur(15px) saturate(172%);
-    -webkit-backdrop-filter: blur(15px) saturate(172%);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    min-height: calc(100vh - 80px); /* Subtract padding space from total height */
-    width: 80%;
-    max-width: 1000px;
-    padding: 30px;
-    text-align: center;
-    margin-top: 20px; /* Adds space above the .top container */
-    margin-bottom: 20px; /* Adds space below the .top container */
+.floating {
+    min-width: 500px;
+    font-family: monospace;
+    font-size: 24px;
+    width: 45%;
+    height: 53%;
+    padding: 20px;
+    color: #e84d58;
+    border-radius: 30px;
 }
 
-h1, h3 {
-    margin: 10px 0; /* Add some margin between h1 and h3 */
+.noise {
+    background-color: rgba(235, 235, 235, 0.8);
+    background-image: url(images/noise-light.png);
 }
 
-br {
-    line-height: 2; /* Increase space between lines */
+.links {
+    display: flex;
+    gap: 25px;
+    margin-top: 20px;
 }
 
-
-@-webkit-keyframes bg-scrolling-reverse {
-  100% {
-    background-position: 50px 50px;
-  }
-}
-@-moz-keyframes bg-scrolling-reverse {
-  100% {
-    background-position: 50px 50px;
-  }
-}
-@-o-keyframes bg-scrolling-reverse {
-  100% {
-    background-position: 50px 50px;
-  }
-}
-@keyframes bg-scrolling-reverse {
-  100% {
-    background-position: 50px 50px;
-  }
-}
-@-webkit-keyframes bg-scrolling {
-  0% {
-    background-position: 50px 50px;
-  }
-}
-@-moz-keyframes bg-scrolling {
-  0% {
-    background-position: 50px 50px;
-  }
-}
-@-o-keyframes bg-scrolling {
-  0% {
-    background-position: 50px 50px;
-  }
-}
-@keyframes bg-scrolling {
-  0% {
-    background-position: 50px 50px;
-  }
+.links img {
+    width: 48px;
+    height: 48px;
+    transition: transform 0.3s ease;
 }
 
-ul {
-  max-width: max-content;
-  text-align: left;
-  display: table;
-  margin: 0 auto;
+.links img:hover {
+    transform: scale(1.2);
 }
