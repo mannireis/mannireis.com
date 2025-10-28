@@ -1,0 +1,75 @@
+html {
+  background-color: #12121C;
+  font-family: jetbrains mono, monospace;
+  color: #F4BFBF;
+  padding: 0;
+  margin: 0;
+}
+
+.footer {
+    background-color: #26223A;
+    width: 100%;
+    height: 85px;
+    margin: 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.btn-about, .btn-blog, .btn-friends {
+    width: 50px;
+    height: 50px;
+    border: none;
+    margin-right: 15px;
+    bottom: 0;
+}
+
+.btn-about {
+    margin-left: 30%;
+    background-color: #C8B6FF;
+}
+
+.btn-blog {
+    background-color: #A0E7E5;
+}
+
+.btn-friends {
+    background-color: #F4BFBF;
+}
+
+.header {
+    height: 400px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.angled-base {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #12121C;
+    width: 65%;
+    height: 80px;
+    clip-path: polygon(0 0, calc(100% - 100px) 0, 100% 100%, 0 100%);
+    display: flex;
+    align-items: center;
+}
+
+
+.header-picture {
+    left: 0;
+    top: 0;
+    right: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.about-me {
+    background-color: #B4E4FF;
+    height: 80%;
+    width: 60%;
+}

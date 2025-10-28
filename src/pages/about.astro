@@ -1,0 +1,36 @@
+---
+import '../styles/global.css';
+console.log('This runs in your terminal, not the browser!');
+const pageTitle = "About Me";
+
+const identity = {
+  name: "Manni",
+  country: "Portugal",
+  occupation: "Full time hack clubber",
+  hobbies: ["Coding", "Reading"],
+};
+
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{pageTitle}</title>
+  </head>
+  <body>
+    <a href="/">Home</a>
+    <a href="/about/">About</a>
+    <a href="/blog/">Blog</a>
+    <h1>{pageTitle}</h1>
+    <h2>... and my new Astro site!</h2>
+
+    <p>Here is some stuff:</p>
+    <ul>
+      <li>my name is: {identity.name}</li>
+      <li>i currently live in: {identity.country}</li>
+      <li>and i do: {identity.occupation}</li>
+      <li>these are my hobbies: {identity.hobbies.join(', ')}</li>
+    </ul>
+  </body>
+</html>
