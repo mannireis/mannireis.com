@@ -1,0 +1,25 @@
+---
+import Separator from "../components/Separator.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="home">
+    <div class="page-grid">
+        <div class="about-me"></div>
+        <!-- test -->
+        <Separator />
+    </div>
+</Layout>
+
+<style>
+    .page-grid {
+        display: grid;
+    }
+    .about-me {
+        width: 100%;
+        height: 30vh;
+        background-color: #ec735710;
+        border-radius: 13px;
+        border: 4px solid #ec7357;
+    }
+</style>
