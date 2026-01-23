@@ -3,16 +3,44 @@
 ---
 
 <div class="grid">
-    <h1>meow</h1>
+    <div class="content-1">
+        <h2>Haiii, I’m maddy,</h2>
+        <h3>a 14yo transfem that loves being silly.</h3>
+        <p>
+            im interested in: hardware, gamedev, gaming, programming, reading
+            and being outside. Im also a proud member of Hack Club.
+        </p>
+    </div>
+    <div class="content-2"></div>
 </div>
 
 <style>
+    h2,
+    h3,
+    p {
+        margin-top: 3px;
+    }
+
     .grid {
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        align-items: start;
+        gap: 10px;
         margin: 40px 0px 40px;
-        background-color: #d7d0e610;
-        border: 4px solid #d7d0e6;
-        border-radius: 8px;
         width: 100%;
-        padding: 15px;
+        height: 600px;
+        background-color: #ec735710;
+        border: 4px solid #ec7357;
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    .content-2 {
+        grid-column: 2 / 3;
+    }
+
+    .content-1 {
+        grid-column: 1 / 2;
     }
 </style>
