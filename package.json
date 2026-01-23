@@ -9,6 +9,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/cloudflare": "^12.6.12",
     "@fontsource/jetbrains-mono": "^5.2.8",
     "@fontsource/material-icons": "^5.2.7",
     "astro": "^5.16.11"
