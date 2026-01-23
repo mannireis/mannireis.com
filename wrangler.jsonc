@@ -6,6 +6,9 @@
     "nodejs_compat",
     "global_fetch_strictly_public"
   ],
+  "vars": {
+    "LASTFM_KEY": ""
+  },
 	"assets": {
 		"binding": "ASSETS",
 		"directory": "./dist"
