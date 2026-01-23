@@ -141,7 +141,7 @@ const lastfmKey = env.LASTFM_KEY;
 
         const [lastfmData, data] = await Promise.all([
             fetch(
-                "http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=mannireis&api_key=" +
+                "https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=mannireis&api_key=" +
                     lastfmKey +
                     "&format=json",
             ).then((res) => res.json()),
