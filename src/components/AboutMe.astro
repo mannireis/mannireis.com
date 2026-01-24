@@ -152,9 +152,12 @@ const lastfmKey = env.LASTFM_KEY;
             ).then((res) => res.json()),
         ]);
 
-        const currentSongTitle = lastfmData.recenttracks.track[0].name;
+        const currentSongTitle =
+            lastfmData.recenttracks.track[0].name ??
+            "nothing playing right now";
         const currentSongArtist =
-            lastfmData.recenttracks.track[0].artist["#text"];
+            lastfmData.recenttracks.track[0].artist["#text"] ??
+            "nothing playing right now";
         const currentSongCover =
             lastfmData.recenttracks.track[0].image[2]["#text"];
 
@@ -168,7 +171,17 @@ const lastfmKey = env.LASTFM_KEY;
         const wrapperEl = document.querySelector(
             ".song-name-wrapper",
         ) as HTMLElement;
+
         songNameEl.textContent = currentSongTitle + " - " + currentSongArtist;
+
+        const currentSongEl = document.querySelector(
+            ".current-song",
+        ) as HTMLElement;
+        if (lastfmData.recenttracks.track[0]["@attr"]?.nowplaying === "true") {
+            currentSongEl.style.display = "flex";
+        } else {
+            currentSongEl.style.display = "none";
+        }
 
         if (songNameEl.scrollWidth > wrapperEl.clientWidth) {
             songNameEl.classList.add("overflow");
