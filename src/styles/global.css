@@ -14,7 +14,7 @@
 body {
     display: grid;
     font-family: "JetBrains Mono";
-    background-color: #1f2025;
+    background-color: #0c101f;
     color: #f9f4f5;
     min-height: 100vh;
     padding-inline: max(calc((100% - 65%) / 2), 15px);

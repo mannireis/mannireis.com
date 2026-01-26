@@ -3,25 +3,33 @@
 ---
 
 <div class="grid">
-    <div class="hardware"></div>
+    <div class="hardware">
+        <h2>hardware</h2>
+        <p>i know how to use:</p>
+        <ul>
+            <li>fusion</li>
+            <li>kicad</li>
+            <li>and some more things</li>
+        </ul>
+    </div>
     <div class="gamedev"></div>
     <div class="other"></div>
 </div>
 
 <style>
     .hardware {
-        background-color: pink;
-        border: 4px solid black;
+        background-color: #ee6d8020;
+        border: 4px solid #ee6d80;
     }
 
     .gamedev {
-        background-color: green;
-        border: 4px solid black;
+        background-color: #3772ff20;
+        border: 4px solid #3772ff;
     }
 
     .other {
-        background-color: blue;
-        border: 4px solid black;
+        background-color: #f7c54820;
+        border: 4px solid #f7c548;
     }
 
     .grid {
@@ -36,6 +44,10 @@
     }
 
     .grid > div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
         border-radius: 8px;
         height: 100%;
         transition: transform 0.2s ease;
