@@ -1,5 +1,5 @@
 ---
-const commitSha = import.meta.env.CF_PAGES_COMMIT_SHA || import.meta.env.GITHUB_SHA || "unknown";
+const commitSha = import.meta.env.PUBLIC_COMMIT_SHA || "unknown";
 const sha = commitSha.slice(0, 7);
 const url = commitSha !== "unknown" 
     ? `https://github.com/mannireis/mannireis.com/commit/${commitSha}`
